@@ -2431,7 +2431,6 @@
             <button type="button" onclick="window.toggleRevealAllPageOcclusions()" class="v13-bot-sym-btn text-yellow-200" title="👁️ Reveal / Mask All Occluded Diagram Labels on Current Page (Hotkey: I)">👁️</button>
             <button type="button" onclick="window.snipCurrentPageDiagram()" class="v13-bot-sym-btn text-emerald-300" title="📸 Snip Diagram / Figure from Page">📸</button>
             <button type="button" onclick="window.openDualBookSplitViewer()" class="v13-bot-sym-btn text-blue-300" title="◫ Floatable & Resizable Dual-Book Split View">◫</button>
-            <button type="button" data-module="pomonote" onclick="window.toggleSplitScreenScratchpad && window.toggleSplitScreenScratchpad()" class="v13-bot-sym-btn text-purple-300" title="📝 PomoNote & Hybrid Scratchpad">📝</button>
             <button type="button" onclick="window.toggleScannedPdfInvertMode()" class="v13-bot-sym-btn text-yellow-300" title="🌙 Invert Scanned PDF Colors for Night Reading">🌙</button>
             <button type="button" id="v14-bionic-btn" onclick="window.toggleBionicReadingMode()" class="v13-bot-sym-btn text-pink-300" title="⚡ Bionic Fast-Reading Mode (Customize Font & Color in ⋮ -> iii. Miscellaneous)">⚡</button>
             <button type="button" onclick="window.openRealFeynmanBlurTest()" class="v13-bot-sym-btn text-rose-300" title="🎤 Multi-Language Live Feynman Blur-the-Page Recall Check">🎤</button>
