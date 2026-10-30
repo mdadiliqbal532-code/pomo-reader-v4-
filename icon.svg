@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+    <defs>
+        <!-- Deep Obsidian Squircle Background Gradient -->
+        <radialGradient id="bgGlow" cx="50%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#0f172a" />
+            <stop offset="55%" stop-color="#060b16" />
+            <stop offset="100%" stop-color="#020617" />
+        </radialGradient>
+
+        <!-- Outer Metallic Rim Gradient -->
+        <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.75" />
+            <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.55" />
+            <stop offset="100%" stop-color="#10b981" stop-opacity="0.75" />
+        </linearGradient>
+
+        <!-- Pomodoro Chronograph Ring Gradient (Cyan -> Blue -> Emerald) -->
+        <linearGradient id="chronoRing" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#38bdf8" />
+            <stop offset="50%" stop-color="#2563eb" />
+            <stop offset="100%" stop-color="#10b981" />
+        </linearGradient>
+
+        <!-- High-Intensity Tomato Focus Arc -->
+        <linearGradient id="tomatoArc" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ff4757" />
+            <stop offset="100%" stop-color="#f59e0b" />
+        </linearGradient>
+
+        <!-- 3D Golden Polymath Book Gradient -->
+        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#fde047" />
+            <stop offset="50%" stop-color="#f59e0b" />
+            <stop offset="100%" stop-color="#b45309" />
+        </linearGradient>
+
+        <!-- Crisp Book Pages Gradient -->
+        <linearGradient id="pageGradL" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#e2e8f0" />
+            <stop offset="85%" stop-color="#cbd5e1" />
+            <stop offset="100%" stop-color="#64748b" />
+        </linearGradient>
+        <linearGradient id="pageGradR" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#64748b" />
+            <stop offset="15%" stop-color="#cbd5e1" />
+            <stop offset="100%" stop-color="#f8fafc" />
+        </linearGradient>
+
+        <!-- Soft Neon Drop Shadow Filter -->
+        <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="8" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+    </defs>
+
+    <!-- 1. Base 3D Squircle Icon Chassis -->
+    <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bgGlow)" stroke="url(#rimGrad)" stroke-width="8" />
+    <rect x="30" y="30" width="452" height="452" rx="98" fill="none" stroke="#1e293b" stroke-width="2" stroke-opacity="0.8" />
+
+    <!-- Subtle Geometric Polymath Grid Aura -->
+    <circle cx="256" cy="248" r="188" fill="none" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="6 8" />
+    <circle cx="256" cy="248" r="134" fill="none" stroke="#0f172a" stroke-width="16" />
+
+    <!-- 2. Top Stopwatch Crown & Tactical Pushers -->
+    <!-- Center Crown -->
+    <rect x="228" y="36" width="56" height="22" rx="8" fill="url(#goldGrad)" stroke="#fef08a" stroke-width="1.5" />
+    <rect x="244" y="56" width="24" height="16" fill="#94a3b8" />
+    <!-- Left Pusher -->
+    <g transform="rotate(-38 142 96)">
+        <rect x="126" y="76" width="32" height="14" rx="5" fill="#38bdf8" />
+        <rect x="135" y="90" width="14" height="12" fill="#64748b" />
+    </g>
+    <!-- Right Pusher -->
+    <g transform="rotate(38 370 96)">
+        <rect x="354" y="76" width="32" height="14" rx="5" fill="#ff4757" />
+        <rect x="363" y="90" width="14" height="12" fill="#64748b" />
+    </g>
+
+    <!-- 3. Outer Chronograph Bezel & Progress Arcs -->
+    <circle cx="256" cy="248" r="168" fill="#040914" stroke="#1e293b" stroke-width="22" />
+    
+    <!-- Primary Cyan-Emerald Study/Deen Track -->
+    <circle cx="256" cy="248" r="168" fill="none" stroke="url(#chronoRing)" stroke-width="16" stroke-linecap="round" stroke-dasharray="760 1055" transform="rotate(-90 256 248)" filter="url(#neonGlow)" />
+
+    <!-- Active Tomato Focus Sprint Arc -->
+    <circle cx="256" cy="248" r="168" fill="none" stroke="url(#tomatoArc)" stroke-width="16" stroke-linecap="round" stroke-dasharray="220 1055" stroke-dashoffset="-785" transform="rotate(-90 256 248)" filter="url(#neonGlow)" />
+
+    <!-- 12 Precision Hour Tick Marks -->
+    <g stroke="#94a3b8" stroke-width="4" stroke-linecap="round" opacity="0.75">
+        <line x1="256" y1="100" x2="256" y2="114" />
+        <line x1="330" y1="120" x2="323" y2="132" />
+        <line x1="384" y1="174" x2="372" y2="181" />
+        <line x1="404" y1="248" x2="390" y2="248" />
+        <line x1="384" y1="322" x2="372" y2="315" />
+        <line x1="182" y1="120" x2="189" y2="132" />
+        <line x1="128" y1="174" x2="140" y2="181" />
+        <line x1="108" y1="248" x2="122" y2="248" />
+        <line x1="128" y1="322" x2="140" y2="315" />
+    </g>
+
+    <!-- 4. Golden Crescent & Compass Star of Purpose (Center-Top) -->
+    <!-- Emerald Crescent Moon -->
+    <path d="M226 168 A42 42 0 1 0 286 218 A34 34 0 1 1 226 168 Z" fill="#10b981" opacity="0.9" />
+    <!-- 4-Point Golden Compass Star -->
+    <path d="M266 136 L273 157 L294 164 L273 171 L266 192 L259 171 L238 164 L259 157 Z" fill="url(#goldGrad)" filter="url(#neonGlow)" />
+
+    <!-- 5. Chronograph Hands (Locked in at 50m Focus) -->
+    <!-- Minute Hand (Cyan) -->
+    <line x1="256" y1="248" x2="190" y2="162" stroke="#38bdf8" stroke-width="10" stroke-linecap="round" filter="url(#neonGlow)" />
+    <!-- Second / Pomodoro Hand (Tomato Red) -->
+    <line x1="256" y1="248" x2="342" y2="196" stroke="#ff4757" stroke-width="8" stroke-linecap="round" filter="url(#neonGlow)" />
+    <!-- Center Pivot Jewel -->
+    <circle cx="256" cy="248" r="14" fill="url(#goldGrad)" stroke="#020617" stroke-width="4" />
+    <circle cx="256" cy="248" r="5" fill="#ffffff" />
+
+    <!-- 6. 3D Wooden Shelf & Open Polymath Book (Lower Foreground) -->
+    <!-- Mahogany/Walnut Book Cover Base -->
+    <path d="M104 336 C152 336 216 348 256 374 C296 348 360 336 408 336 L422 414 C366 410 300 422 256 448 C212 422 146 410 90 414 Z" fill="#78350f" stroke="url(#goldGrad)" stroke-width="5" stroke-linejoin="round" />
+
+    <!-- Left Illuminated Book Page -->
+    <path d="M114 318 C162 316 218 330 256 358 L256 432 C216 406 158 394 102 398 Z" fill="url(#pageGradL)" stroke="#94a3b8" stroke-width="2" stroke-linejoin="round" />
+
+    <!-- Right Illuminated Book Page -->
+    <path d="M398 318 C350 316 294 330 256 358 L256 432 C296 406 354 394 410 398 Z" fill="url(#pageGradR)" stroke="#94a3b8" stroke-width="2" stroke-linejoin="round" />
+
+    <!-- Engraved Semantic Lines on Left Page -->
+    <path d="M134 342 C168 342 206 350 236 368" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" />
+    <path d="M130 360 C166 360 204 368 236 386" fill="none" stroke="#475569" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M126 378 C162 378 202 386 234 404" fill="none" stroke="#10b981" stroke-width="3.5" stroke-linecap="round" />
+
+    <!-- Engraved Medical/Science ECG Wave on Right Page -->
+    <path d="M276 382 L302 382 L312 362 L322 396 L334 350 L344 388 L354 376 L384 372" fill="none" stroke="#ff4757" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Red Ribbon Bookmark Hanging from Spine -->
+    <path d="M250 356 L262 356 L266 468 L256 456 L246 468 Z" fill="#ff4757" />
+</svg>
